@@ -94,7 +94,8 @@ stateManagement:
     - cust_last_name
     - country_key
   productStoreState:
-    logicalSchema: '[{"name":"Dupont","firstname":"Marie","age":19}]'
+    logicalSchema:
+      name: John
     retentionVersions: '10'
 transformation:
   sql: select 'CRF' as source, customer_id, date_format(cust_birthday, 'yyyy-MM-dd')
