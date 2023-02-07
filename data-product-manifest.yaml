@@ -94,7 +94,6 @@ stateManagement:
     - cust_last_name
     - country_key
   productStoreState:
-    logicalSchemaUrn: "${urn:dv:schema:263deedb-916b-40f2-9740-6ee02ce9b8b9}"
     
     retentionVersions: '10'
 transformation:
