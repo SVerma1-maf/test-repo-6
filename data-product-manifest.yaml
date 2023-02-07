@@ -57,7 +57,7 @@ stateManagement:
       Gender:
         type: string
         enum: [Male, Female, Unknown]
-        description: Gender of the person
+        description: Gender of the person. Possible values Male, Female and Unknown
       Id:
         type: number
         description: Unique Identifier of the person
