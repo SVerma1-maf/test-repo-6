@@ -94,7 +94,10 @@ stateManagement:
     - cust_last_name
     - country_key
   productStoreState:
-    
+    logicalSchema:
+      name: John
+      gender: Male
+      Id: 12345
     retentionVersions: '10'
 transformation:
   sql: select 'CRF' as source, customer_id, date_format(cust_birthday, 'yyyy-MM-dd')
