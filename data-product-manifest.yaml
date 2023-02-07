@@ -1,7 +1,7 @@
 # --- Data product definition template and documentation   --- #
 version: 0.0.1
 discoveryPort:
-  name: Logical Schema test
+  name: Logical Schema test (logicalschema branch)
   description: A daliy updated product about CRF customer data. It consist of more
     than 20M records integrated from 5 different sources
   category: customer
@@ -95,9 +95,17 @@ stateManagement:
     - country_key
   productStoreState:
     logicalSchema:
-      name: John
-      gender: Male
-      id: 12345
+      Name:
+        type: string
+        description: Name of the person
+      Gender:
+        type: string
+        enum: [Male, Female, Unknown]
+        description: Gender of the person
+      Id:
+        type: number
+        description: Unique Identifier of the person
+      required: [Name, Id]
     retentionVersions: '10'
 transformation:
   sql: select 'CRF' as source, customer_id, date_format(cust_birthday, 'yyyy-MM-dd')
