@@ -18,7 +18,7 @@ inputPorts:
     extra: {}
     syncType: pull
     type: s3
-    sourceUrn: urn:dv:datasource:d0e7d066-d913-4526-bea5-f1aeba657e98
+    sourceUrn: urn:dv:datasource:urn:dv:datasource:a7ea4b35-4537-4a77-b189-949a3d723ed9
     entityId:
       alias: usersS3
       createEntity: true
@@ -48,8 +48,6 @@ inputPorts:
 stateManagement:
   alias: users_count_by_gender
   refreshInterval: 00 10 * * *
-  logicalSchemaUrn: ${urn:dv:schema:263deedb-916b-40f2-9740-6ee02ce9b8b9}
-  retentionVersions: "10"
   updateStrategy: SCD-2
   productStoreState:
     logicalSchemaUrn: ${urn:dv:schema:263deedb-916b-40f2-9740-6ee02ce9b8b9}
