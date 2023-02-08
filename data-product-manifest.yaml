@@ -18,7 +18,7 @@ inputPorts:
     extra: {}
     syncType: pull
     type: s3
-    sourceUrn: urn:dv:datasource:urn:dv:datasource:a7ea4b35-4537-4a77-b189-949a3d723ed9
+    sourceUrn: urn:dv:datasource:a7ea4b35-4537-4a77-b189-949a3d723ed9
     entityId:
       alias: usersS3
       createEntity: true
@@ -50,18 +50,7 @@ stateManagement:
   refreshInterval: 00 10 * * *
   updateStrategy: SCD-2
   productStoreState:
-    logicalSchema:
-      Name:
-        type: string
-        description: Name of the person
-      Gender:
-        type: string
-        enum: [Male, Female, Unknown]
-        description: Gender of the person. Possible values Male, Female and Unknown
-      Id:
-        type: number
-        description: Unique Identifier of the person
-      required: [Name, Id]
+    logicalSchemaURN: urn:dv:schema:263deedb-916b-40f2-9740-6ee02ce9b8b9
     retentionVersions: "10"
   updateStrategyOptions:
     - entityRef: ${urn:dv:datasource:6d4714c3}:1
