@@ -1,7 +1,7 @@
 ---
 version: 0.0.1
 discoveryPort:
-  
+  name: Test consumption channel 1
   description: The data product is to test whether consumption channels are returned by BE as in manifest.
   category: customer
   image: http://google.com
