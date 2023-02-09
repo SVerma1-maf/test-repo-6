@@ -50,22 +50,23 @@ stateManagement:
   updateStrategy: SCD-2
   productStoreState:
     logicalSchema:
-      Name:
-        type: string
-        description: Name of the person
-      Gender:
-        type: string
-        enum:
-          - Male
-          - Female
-          - Unknown
-        description: Gender of the person. Possible values Male, Female and Unknown
-      Id:
-        type: number
-        description: Unique Identifier of the person
-      required:
-        - Name
-        - Id
+      properties:
+        Name:
+          type: string
+          description: Name of the person
+        Gender:
+          type: string
+          enum:
+            - Male
+            - Female
+            - Unknown
+          description: Gender of the person. Possible values Male, Female and Unknown
+        Id:
+          type: number
+          description: Unique Identifier of the person
+        required:
+          - Name
+          - Id
     retentionVersions: "10"
   updateStrategyOptions:
     - entityRef: ${urn:dv:datasource:6d4714c3}:1
